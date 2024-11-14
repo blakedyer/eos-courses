@@ -11,6 +11,11 @@ Welcome to eos-courses's documentation!
    :caption: Contents:
 
 
+.. toctree::
+  :maxdepth: 3
+
+  eos240-public/overview.rst
+
 
 Indices and tables
 ==================
