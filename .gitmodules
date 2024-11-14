@@ -13,3 +13,6 @@
 [submodule "source/eos423-public"]
 	path = source/eos423-public
 	url = https://github.com/blakedyer/eos423-public
+[submodule "source/eos240-public"]
+	path = source/eos240-public
+	url = https://github.com/blakedyer/eos240-public
