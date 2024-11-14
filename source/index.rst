@@ -1,25 +1,24 @@
-.. eos-courses documentation master file, created by
-   sphinx-quickstart on Thu Nov 14 11:00:39 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to eos-courses's documentation!
+.. title:: Teaching
+   
+Teaching
 =======================================
+The links below will take you to the courses I have developed and teach in the School of Earth and Ocean Sciences at the University of Victoria.
+
+Courses
+-----------------
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
 
+   EOS240: Geochemistry <eos240-public/overview.rst>
 
 .. toctree::
-  :maxdepth: 3
+   :maxdepth: 1
 
-  eos240-public/overview.rst
+   EOS408: Marine Geology <eos408-public/overview.rst>
 
+.. toctree::
+   :maxdepth: 1
 
-Indices and tables
-==================
+   EOS423: Advanced Sedimentology and Stratigraphy <eos423-public/overview.rst>
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'eos-courses'
+project = 'Teaching'
 copyright = '2024, Blake Dyer'
 author = 'Blake Dyer'
 release = '2024'
@@ -14,15 +14,25 @@ release = '2024'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ["crate.sphinx.csv", "sphinx.ext.mathjax"]
 
-templates_path = ['_templates']
+# templates_path = ['_templates']
 exclude_patterns = []
-
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
-html_static_path = ['_static']
+html_theme = "sphinx_book_theme"
+html_theme_options = {
+    "github_url": "https://github.com/blakedyer/eos-courses",
+    "show_prev_next": False,
+    # "navbar_end": ["search-field.html", "navbar-icon-links.html"],
+    "logo": {
+        "text": project,
+    }
+}
+# html_sidebars = {
+#     "**": [],
+# }
+html_favicon = 'favicon.png'
+# html_static_path = ['_static']
