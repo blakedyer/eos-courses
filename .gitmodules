@@ -7,3 +7,9 @@
 [submodule "eos408-public"]
 	path = eos408-public
 	url = https://github.com/blakedyer/eos408-public
+[submodule "source/eos408-public"]
+	path = source/eos408-public
+	url = https://github.com/blakedyer/eos408-public
+[submodule "source/eos423-public"]
+	path = source/eos423-public
+	url = https://github.com/blakedyer/eos423-public
