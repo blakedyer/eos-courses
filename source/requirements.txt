@@ -1,2 +1,3 @@
 sphinx-csv-filter
 sphinx-book-theme
+myst-nb
