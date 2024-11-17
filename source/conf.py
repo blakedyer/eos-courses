@@ -29,7 +29,7 @@ nb_execution_mode = "off"
 #     "html_image",
 # ]
 
-flyout_display = 'flyout_display'
+flyout_display = 'attached'
 
 myst_url_schemes = ("http", "https", "mailto")
 # templates_path = ['_templates']
