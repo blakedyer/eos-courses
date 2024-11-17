@@ -6,7 +6,12 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = " "
+project = """<span style="text-align: left;
+  font-weight: 700;
+  letter-spacing: .2em;
+  font-size: .5em;
+  margin-bottom: 2%;
+  margin-top: 2%;">EARTH HISTORY @ UVIC<br>TEACHING</span>"""
 copyright = '2024, Blake Dyer'
 author = 'Blake Dyer'
 release = '2024'
@@ -26,6 +31,8 @@ myst_enable_extensions = [
     "html_image",
 ]
 
+flyout_display = 'flyout_display'
+
 myst_url_schemes = ("http", "https", "mailto")
 # templates_path = ['_templates']
 exclude_patterns = []
@@ -40,10 +47,17 @@ html_theme_options = {
     # "navbar_end": ["search-field.html", "navbar-icon-links.html"],
     "logo": {
         "text": project,
-    }
+    },
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/blakedyer/eos-courses",
+            "icon": "fa-brands fa-github",
+        }]
 }
 # html_sidebars = {
 #     "**": [],
 # }
+html_logo = "_static/logo.jpg"
 html_favicon = 'favicon.png'
 html_static_path = ['_static','eos240-public/Lectures']
