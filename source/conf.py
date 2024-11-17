@@ -58,5 +58,6 @@ html_theme_options = {
 # }
 html_logo = "_static/logo.jpg"
 html_favicon = 'favicon.png'
-html_static_path = ['_static','eos240-public/Lectures']
+html_static_path = ['_static','eos240-public/Lectures','eos408-public/Lectures','eos423-public/Lectures']
 html_css_files = ['custom.css']
+html_title = "Earth History @ UVIC"
