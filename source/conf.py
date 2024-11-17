@@ -19,17 +19,17 @@ release = '2024'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_nb", "crate.sphinx.csv", "sphinx.ext.mathjax"]
+extensions = ["crate.sphinx.csv", "sphinx.ext.mathjax"]
 
 nb_execution_mode = "off"
 
-myst_enable_extensions = [
-    "amsmath",
-    "colon_fence",
-    "deflist",
-    "dollarmath",
-    "html_image",
-]
+# myst_enable_extensions = [
+#     "amsmath",
+#     "colon_fence",
+#     "deflist",
+#     "dollarmath",
+#     "html_image",
+# ]
 
 flyout_display = 'flyout_display'
 
@@ -61,3 +61,4 @@ html_theme_options = {
 html_logo = "_static/logo.jpg"
 html_favicon = 'favicon.png'
 html_static_path = ['_static','eos240-public/Lectures']
+html_css_files = ['custom.css']
