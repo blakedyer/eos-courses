@@ -46,6 +46,7 @@ html_theme_options = {
     "logo": {
         "text": project,
     },
+    "flyout_display":"attached",
     "icon_links": [
         {
             "name": "GitHub",
