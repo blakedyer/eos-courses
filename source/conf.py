@@ -6,12 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = """<span style="text-align: left;
-  font-weight: 700;
-  letter-spacing: .2em;
-  font-size: .5em;
-  margin-bottom: 2%;
-  margin-top: 2%;">EARTH HISTORY @ UVIC<br>TEACHING</span>"""
+project = """<span style="text-align: center;
+  font-weight: 700;line-height: 1;display: block;
+  letter-spacing: .15em;
+  font-size: .6em;">EARTH HISTORY @ UVIC<br>TEACHING</span>"""
 copyright = '2024, Blake Dyer'
 author = 'Blake Dyer'
 release = '2024'
