@@ -29,7 +29,7 @@ nb_execution_mode = "off"
 #     "html_image",
 # ]
 
-flyout_display = 'attached'
+
 
 myst_url_schemes = ("http", "https", "mailto")
 # templates_path = ['_templates']
@@ -46,7 +46,6 @@ html_theme_options = {
     "logo": {
         "text": project,
     },
-    "flyout_display":"attached",
     "icon_links": [
         {
             "name": "GitHub",
