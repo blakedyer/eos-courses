@@ -1,4 +1,3 @@
-import pandas as pd
 import os
 courses = ["eos240", "eos423"]
 # courses = ["eos423"]

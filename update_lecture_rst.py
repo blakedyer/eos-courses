@@ -7,7 +7,7 @@ courses = ["eos240", "eos408", "eos423"]
 for c in courses:
     prefix = f"source/{c}-public/Lectures/"
 
-    slides = [s for s in os.listdir(prefix) if 'slides' in s]
+    slides = [s for s in os.listdir(prefix) if 'slides.html' in s]
     slides.sort()
     raw = [f"{s.split('.slides')[0]}.ipynb" for s in slides]
 
@@ -40,19 +40,17 @@ for c in courses:
         slide_page = f"""{long_title}
 =====================================================   
 
-Links for full screen web viewing
+Link for full screen web viewing
 ------------------------------------------
 Spacebar to advance, shift+spacebar to go backwards, escape for overview.
 
 `{long_title} <../_static/{slide_file}>`_
 
 
-Links for PDF/printing
+PDF download
 ------------------------
 
-To generate a PDF, click the link then go to print-->save as PDF in your browser.
-
-`{long_title} <../_static/{slide_file}?print-pdf>`_
+:download:`{long_title} <Lectures/pdf_slides/{s}.pdf>`
 """
         with open(f"{prefix.split('Lectures/')[0]}/{s}.rst", "w+") as f:
             f.writelines(slide_page)
