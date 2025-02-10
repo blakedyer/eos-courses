@@ -15,6 +15,7 @@ for c in courses:
     cmap["mygreen"] = "#657060"
     cmap["myorange"] = "#E48C2A"
     cmap["mygreen2"] = "#44A57C"
+    cmap["myskyblue"] = "#64b5cd"
 
     lines = ""
     for row in df.iterrows():
