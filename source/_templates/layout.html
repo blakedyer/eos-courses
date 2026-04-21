@@ -1,5 +1,17 @@
 {% extends "!layout.html" %}
 
+{% block css %}
+<script data-cfasync="false">
+  try {
+    localStorage.setItem("mode", "light");
+    localStorage.setItem("theme", "light");
+  } catch (error) {}
+  document.documentElement.dataset.mode = "light";
+  document.documentElement.dataset.theme = "light";
+</script>
+{{ super() }}
+{% endblock %}
+
 <!-- Hide left sidebar in home page -->
 {% block docs_sidebar %}
 {% if pagename == 'index' %}

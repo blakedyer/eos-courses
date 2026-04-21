@@ -1146,26 +1146,6 @@ table.docutils {
     border-radius: 1.35rem;
   }
 
-  .admonition-course-is-live {
-    background: rgba(47, 91, 82, 0.14);
-    border-color: rgba(47, 91, 82, 0.24);
-  }
-
-  .admonition-course-is-live .admonition-title {
-    background: rgba(47, 91, 82, 0.18);
-    color: var(--pst-color-primary-highlight);
-  }
-
-  .admonition.attention {
-    background: rgba(183, 134, 82, 0.16);
-    border-color: rgba(183, 134, 82, 0.28);
-  }
-
-  .admonition.attention .admonition-title {
-    background: rgba(183, 134, 82, 0.24);
-    color: #6e4a23;
-  }
-
   .admonition-course-is-live #lastModified,
   .admonition.attention p:last-child {
     color: var(--pst-color-heading-color);
