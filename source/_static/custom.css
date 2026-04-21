@@ -278,26 +278,33 @@ pre {
   margin-left: 0.18rem;
 }
 
+.bd-links,
+.bd-links .bd-toc-item,
+.bd-links .bd-sidenav,
+.bd-links .bd-sidenav ul {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.bd-links .bd-toc-item.navbar-nav {
+  flex-direction: column;
+}
+
 .bd-links .bd-sidenav {
-  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
 }
 
 .bd-links .bd-sidenav li {
+  display: block;
+  width: 100%;
+  min-width: 0;
   margin: 0;
 }
 
 .bd-links .bd-sidenav li.has-children {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-areas:
-    "link toggle"
-    "children children";
-  align-items: start;
-  column-gap: 0.32rem;
-  row-gap: 0.16rem;
-  width: 100%;
-  min-width: 0;
 }
 
 .bd-links .bd-sidenav a.reference.internal {
@@ -313,9 +320,7 @@ pre {
 }
 
 .bd-links .bd-sidenav li.has-children > a.reference.internal {
-  grid-area: link;
-  align-self: start;
-  padding-right: 0.2rem;
+  padding-right: 2.75rem;
 }
 
 .bd-links .bd-sidenav a.reference.internal:hover,
@@ -326,16 +331,16 @@ pre {
 }
 
 .bd-links .bd-sidenav label.toctree-toggle {
-  grid-area: toggle;
+  position: absolute;
+  top: 0.22rem;
+  right: 0.16rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: start;
-  justify-self: end;
   flex-shrink: 0;
   width: 1.95rem;
   min-height: 1.95rem;
-  margin-top: 0.18rem;
+  margin-top: 0;
   border: 1px solid rgba(76, 87, 81, 0.16);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.72);
@@ -358,11 +363,11 @@ pre {
 }
 
 .bd-links .bd-sidenav li.has-children > ul {
-  grid-area: children;
+  display: block;
   width: 100%;
   min-width: 0;
-  margin: 0.05rem 0 0.45rem;
-  padding-left: 0.85rem;
+  margin: 0.08rem 0 0.45rem;
+  padding: 0 0 0 0.95rem;
   border-left: 1px solid rgba(76, 87, 81, 0.12);
 }
 
@@ -377,6 +382,12 @@ pre {
 
 .bd-links .bd-sidenav li > details > summary {
   border-radius: 0.8rem;
+}
+
+.bd-links .bd-sidenav li.current > a.reference.internal,
+.bd-links .bd-sidenav li.active > a.reference.internal {
+  background: rgba(47, 91, 82, 0.11);
+  color: var(--pst-color-heading-color);
 }
 
 .bd-sidebar-secondary,
