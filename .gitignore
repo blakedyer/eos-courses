@@ -1,5 +1,7 @@
 build/*
 .venv/
+__pycache__/
+*.pyc
 Link to *
 .ipynb_checkpoints/update_outlines-checkpoint.py
 .ipynb_checkpoints/Untitled-checkpoint.ipynb
