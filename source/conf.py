@@ -3,6 +3,12 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
+import sys
+
+
+sys.path.insert(0, os.path.abspath("_ext"))
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -32,7 +38,7 @@ nb_execution_mode = "off"
 
 
 myst_url_schemes = ("http", "https", "mailto")
-# templates_path = ['_templates']
+templates_path = ['_templates']
 exclude_patterns = []
 
 # -- Options for HTML output -------------------------------------------------
@@ -42,22 +48,23 @@ html_theme = "sphinx_book_theme"
 html_theme_options = {
     # "github_url": "https://github.com/blakedyer/eos-courses",
     "show_prev_next": False,
-    # "navbar_end": ["search-field.html", "navbar-icon-links.html"],
+    "search_bar_text": "Search",
+    "navbar_persistent": [],
+    "article_header_start": [],
+    "article_header_end": [],
+    "secondary_sidebar_items": [],
+    "use_download_button": False,
+    "use_fullscreen_button": False,
     "logo": {
         "text": project,
     },
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/blakedyer/eos-courses",
-            "icon": "fa-brands fa-github",
-        }]
 }
-# html_sidebars = {
-#     "**": [],
-# }
+html_sidebars = {
+    "**": ["navbar-logo.html", "site-hub-link.html", "search-field.html", "sbt-sidebar-nav.html"],
+}
 html_logo = "_static/logo.jpg"
 html_favicon = 'favicon.png'
 html_static_path = ['_static','eos240-public/Lectures','eos408-public/Lectures','eos423-public/Lectures']
 html_css_files = ['custom.css']
+html_js_files = ['live-course.js']
 html_title = "Earth History @ UVIC"
