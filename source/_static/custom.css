@@ -1135,6 +1135,7 @@ table.docutils {
     transition: transform 0.22s ease, visibility 0.22s ease, box-shadow 0.22s ease;
   }
 
+  #pst-primary-sidebar-checkbox:checked ~ .bd-container .bd-sidebar-primary,
   #__primary:checked ~ .bd-container .bd-sidebar-primary {
     visibility: visible;
     transform: translateX(0);

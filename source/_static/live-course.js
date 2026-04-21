@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const courseSidebarToggle = document.getElementById("__primary");
+  const courseSidebarToggle =
+    document.getElementById("pst-primary-sidebar-checkbox") ||
+    document.getElementById("__primary");
   const openButtons = document.querySelectorAll(".teaching-mobile-nav-toggle");
   const closeButtons = document.querySelectorAll(".teaching-mobile-nav-close");
   const mobileSidebarMedia = window.matchMedia("(max-width: 959.98px)");
