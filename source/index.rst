@@ -12,7 +12,7 @@ Teaching
        Earth and Ocean Sciences courses I teach at the University of Victoria.
      </p>
    </div>
-<br>
+   <br>
    <section class="teaching-philosophy">
      <div class="teaching-section-header">
        <p class="teaching-kicker">Teaching Approach</p>
@@ -43,15 +43,15 @@ Teaching
        </article>
      </div>
    </section>
-<br>
-<section class="teaching-philosophy">
-     <div class="teaching-section-header">
-       <p class="teaching-kicker">courses</p>
-       <h2>Current courses</h2>
-     </div>
-     <p class="teaching-philosophy__summary">
-       I currently teach courses in geochemistry, marine geology, and sedimentology/stratigraphy. Each course has its own website with an overview, lecture materials, and assignments that are updated during each offering. Geochemistry is a required course for all Earth and Ocean Sciences majors and offered every spring, while marine geology and sedimentology/stratigraphy are upper-level electives that are offered every other year.
-     </p>
+   <br>
+   <section class="teaching-philosophy">
+      <div class="teaching-section-header">
+        <p class="teaching-kicker">courses</p>
+        <h2>Current courses</h2>
+      </div>
+      <p class="teaching-philosophy__summary">
+        I currently teach courses in geochemistry, marine geology, and sedimentology/stratigraphy. Each course has its own website with an overview, lecture materials, and assignments that are updated during each offering. Geochemistry is a required course for all Earth and Ocean Sciences majors and offered every spring, while marine geology and sedimentology/stratigraphy are upper-level electives that are offered every other year.
+      </p>
    <div class="course-grid">
      <article class="course-card">
        <p class="course-card__code">EOS 240</p>
@@ -94,13 +94,14 @@ Teaching
          <a class="course-pill-link" href="eos423-public/labs.html">Labs</a>
        </div>
      </article>
-   </div>
-   </section>
+     </div>
+     </section>
 
    <div class="teaching-section-header">
      <p class="teaching-kicker">What Each Course Site Includes</p>
      <h2>Every course has its own landing page with links to all course information and materials.</h2>
    </div>
+   <br>
 
    <div class="resource-grid">
      <article class="resource-card">
