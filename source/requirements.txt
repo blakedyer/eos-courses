@@ -1,3 +1,4 @@
 sphinx-csv-filter
-sphinx-book-theme
+sphinx-book-theme==1.0.1
+pydata-sphinx-theme==0.14.4
 myst-nb
