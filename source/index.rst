@@ -8,15 +8,15 @@ Teaching
      <p class="teaching-kicker">Earth History @ UVic Teaching</p>
      <h2>Courses built around quantitative geology, writing, and the sedimentary record.</h2>
      <p class="teaching-lede">
-       These course pages collect outlines, lecture slides, readings, and assignments for the
+       These course pages include outlines, lecture slides, readings, and assignments for the
        Earth and Ocean Sciences courses I teach at the University of Victoria.
      </p>
    </div>
-
+<br>
    <section class="teaching-philosophy">
      <div class="teaching-section-header">
        <p class="teaching-kicker">Teaching Approach</p>
-       <h2>Learning Earth science by using evidence, data, and clear reasoning.</h2>
+       <h2>Learning Earth science by using models, data, and clear reasoning.</h2>
      </div>
      <p class="teaching-philosophy__summary">
        My courses are built around the idea that science education should do more than deliver
@@ -43,7 +43,15 @@ Teaching
        </article>
      </div>
    </section>
-
+<br>
+<section class="teaching-philosophy">
+     <div class="teaching-section-header">
+       <p class="teaching-kicker">courses</p>
+       <h2>Current courses</h2>
+     </div>
+     <p class="teaching-philosophy__summary">
+       I currently teach courses in geochemistry, marine geology, and sedimentology/stratigraphy. Each course has its own website with an overview, lecture materials, and assignments that are updated during each offering. Geochemistry is a required course for all Earth and Ocean Sciences majors and offered every spring, while marine geology and sedimentology/stratigraphy are upper-level electives that are offered every other year.
+     </p>
    <div class="course-grid">
      <article class="course-card">
        <p class="course-card__code">EOS 240</p>
@@ -87,10 +95,11 @@ Teaching
        </div>
      </article>
    </div>
+   </section>
 
    <div class="teaching-section-header">
      <p class="teaching-kicker">What Each Course Site Includes</p>
-     <h2>Every course has its own landing page and a clear path into the semester materials.</h2>
+     <h2>Every course has its own landing page with links to all course information and materials.</h2>
    </div>
 
    <div class="resource-grid">
