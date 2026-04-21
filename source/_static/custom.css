@@ -290,8 +290,14 @@ pre {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "link toggle"
+    "children children";
   align-items: start;
-  column-gap: 0.28rem;
+  column-gap: 0.32rem;
+  row-gap: 0.16rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .bd-links .bd-sidenav a.reference.internal {
@@ -307,8 +313,9 @@ pre {
 }
 
 .bd-links .bd-sidenav li.has-children > a.reference.internal {
-  grid-column: 1;
-  padding-right: 0.35rem;
+  grid-area: link;
+  align-self: start;
+  padding-right: 0.2rem;
 }
 
 .bd-links .bd-sidenav a.reference.internal:hover,
@@ -319,13 +326,16 @@ pre {
 }
 
 .bd-links .bd-sidenav label.toctree-toggle {
-  grid-column: 2;
+  grid-area: toggle;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  align-self: start;
+  justify-self: end;
+  flex-shrink: 0;
   width: 1.95rem;
   min-height: 1.95rem;
-  margin-top: 0.12rem;
+  margin-top: 0.18rem;
   border: 1px solid rgba(76, 87, 81, 0.16);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.72);
@@ -348,10 +358,16 @@ pre {
 }
 
 .bd-links .bd-sidenav li.has-children > ul {
-  grid-column: 1 / -1;
-  margin: 0.2rem 0 0.45rem;
+  grid-area: children;
+  width: 100%;
+  min-width: 0;
+  margin: 0.05rem 0 0.45rem;
   padding-left: 0.85rem;
   border-left: 1px solid rgba(76, 87, 81, 0.12);
+}
+
+.bd-links .bd-sidenav li.has-children > ul > li {
+  min-width: 0;
 }
 
 .bd-links .bd-sidenav li.toctree-l2.has-children > ul,
