@@ -49,6 +49,7 @@ html_theme_options = {
     # "github_url": "https://github.com/blakedyer/eos-courses",
     "show_prev_next": False,
     "search_bar_text": "Search",
+    "navbar_start": ["mobile-sidebar-toggle.html"],
     "navbar_persistent": [],
     "article_header_start": [],
     "article_header_end": [],
