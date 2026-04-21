@@ -285,9 +285,13 @@ pre {
 
 .bd-links,
 .bd-links .bd-toc-item,
-.bd-links .bd-sidenav,
-.bd-links .bd-sidenav ul {
+.bd-links .bd-sidenav {
   display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.bd-links .bd-sidenav ul {
   width: 100%;
   min-width: 0;
 }
@@ -329,8 +333,7 @@ pre {
 }
 
 .bd-links .bd-sidenav a.reference.internal:hover,
-.bd-links .bd-sidenav .current > a.reference.internal,
-.bd-links .bd-sidenav details[open] > summary + ul a.reference.internal:hover {
+.bd-links .bd-sidenav .current > a.reference.internal {
   background: rgba(47, 91, 82, 0.09);
   color: var(--pst-color-heading-color);
 }
@@ -347,18 +350,11 @@ pre {
   border: 0;
 }
 
-.bd-links .bd-sidenav li.has-children > label.toctree-toggle,
-.bd-links .bd-sidenav li.has-children > details {
-  display: block;
-  width: 100%;
-  min-width: 0;
-}
-
-.bd-links .bd-sidenav li.has-children > label.toctree-toggle,
-.bd-links .bd-sidenav li.has-children > details > summary {
+.bd-links .bd-sidenav li.has-children > label.toctree-toggle {
   position: absolute;
   top: 0.22rem;
   right: 0.16rem;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -375,35 +371,21 @@ pre {
   transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
 }
 
-.bd-links .bd-sidenav li.has-children > label.toctree-toggle {
-  cursor: pointer;
+.bd-links .bd-sidenav li.has-children > label.toctree-toggle i {
+  transition: transform 0.18s ease;
 }
 
-.bd-links .bd-sidenav li.has-children > details > summary::-webkit-details-marker {
-  display: none;
+.bd-links .bd-sidenav .toctree-checkbox:checked + label.toctree-toggle i {
+  transform: rotate(180deg);
 }
 
-.bd-links .bd-sidenav li.has-children > details > summary::marker {
-  content: "";
-}
-
-.bd-links .bd-sidenav li.has-children > details > summary .toctree-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-}
-
-.bd-links .bd-sidenav li.has-children > label.toctree-toggle:hover,
-.bd-links .bd-sidenav li.has-children > details > summary:hover {
+.bd-links .bd-sidenav li.has-children > label.toctree-toggle:hover {
   border-color: rgba(47, 91, 82, 0.22);
   background: rgba(47, 91, 82, 0.1);
   color: var(--pst-color-heading-color);
 }
 
-.bd-links .bd-sidenav li.has-children > ul,
-.bd-links .bd-sidenav li.has-children > details > ul {
+.bd-links .bd-sidenav li.has-children > ul {
   width: 100%;
   min-width: 0;
   margin: 0.08rem 0 0.45rem;
@@ -411,15 +393,12 @@ pre {
   border-left: 1px solid rgba(76, 87, 81, 0.12);
 }
 
-.bd-links .bd-sidenav li.has-children > ul > li,
-.bd-links .bd-sidenav li.has-children > details > ul > li {
+.bd-links .bd-sidenav li.has-children > ul > li {
   min-width: 0;
 }
 
 .bd-links .bd-sidenav li.toctree-l2.has-children > ul,
-.bd-links .bd-sidenav li.toctree-l3.has-children > ul,
-.bd-links .bd-sidenav li.toctree-l2.has-children > details > ul,
-.bd-links .bd-sidenav li.toctree-l3.has-children > details > ul {
+.bd-links .bd-sidenav li.toctree-l3.has-children > ul {
   margin-left: 0.2rem;
 }
 
@@ -1063,6 +1042,7 @@ article.bd-article dd {
 .bd-article a.reference.download .pre {
   display: inline;
   background: transparent;
+  border: 0;
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -1082,7 +1062,7 @@ table.docutils {
   margin-bottom: 0 !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959.98px) {
   .bd-header {
     display: block !important;
     position: sticky;
@@ -1122,6 +1102,7 @@ table.docutils {
     box-shadow: 0 12px 24px rgba(23, 27, 25, 0.07);
     color: var(--pst-color-heading-color);
     cursor: pointer;
+    appearance: none;
     font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -1131,10 +1112,6 @@ table.docutils {
   .teaching-mobile-nav-toggle:hover {
     border-color: rgba(47, 91, 82, 0.24);
     color: var(--pst-color-primary-highlight);
-  }
-
-  .bd-container__inner {
-    padding: 0.9rem;
   }
 
   .bd-container__inner {
@@ -1205,16 +1182,17 @@ table.docutils {
     padding: 0.42rem 0.72rem;
     border-radius: 999px;
     background: rgba(47, 91, 82, 0.08);
+    border: none;
     color: var(--pst-color-primary);
     cursor: pointer;
+    appearance: none;
     font-size: 0.74rem;
     font-weight: 700;
     letter-spacing: 0.11em;
     text-transform: uppercase;
   }
 
-  .bd-links .bd-sidenav li.has-children > ul,
-  .bd-links .bd-sidenav li.has-children > details > ul {
+  .bd-links .bd-sidenav li.has-children > ul {
     padding-left: 0.7rem;
   }
 
