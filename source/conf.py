@@ -69,3 +69,4 @@ html_static_path = ['_static','eos240-public/Lectures','eos408-public/Lectures',
 html_css_files = ['custom.css']
 html_js_files = ['live-course.js']
 html_title = "Earth History @ UVIC"
+html_baseurl = "https://blakedyer.github.io/eos-courses/"
