@@ -36,12 +36,14 @@
       <span>Course menu</span>
     </button>
     <nav class="teaching-site-nav" aria-label="Teaching and SEOS sites">
+      <span class="site-nav__label">This site</span>
       <a href="{{ pathto(root_doc) }}"{% if pagename == root_doc %} aria-current="page"{% endif %}>Teaching</a>
       <a href="{{ pathto('eos240-public/overview') }}"{% if pagename.startswith('eos240-public/') %} aria-current="page"{% endif %}>EOS 240</a>
       <a href="{{ pathto('eos408-public/overview') }}"{% if pagename.startswith('eos408-public/') %} aria-current="page"{% endif %}>EOS 408</a>
       <a href="{{ pathto('eos423-public/overview') }}"{% if pagename.startswith('eos423-public/') %} aria-current="page"{% endif %}>EOS 423</a>
       <span class="nav-divider" aria-hidden="true">|</span>
-      <a href="https://www.blakedyer.com/">Research</a>
+      <span class="site-nav__label">Other sites</span>
+      <a href="https://www.blakedyer.com/">Earth History Research</a>
       <a href="https://blakedyer.github.io/curriculum_atlas/">Curriculum Atlas</a>
       <a href="https://blakedyer.github.io/seos_curriculum/">Curriculum Work</a>
     </nav>
