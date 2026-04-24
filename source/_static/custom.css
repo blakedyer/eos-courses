@@ -217,15 +217,6 @@ pre {
   display: none;
 }
 
-.site-hub-link__eyebrow {
-  margin: 0;
-  color: var(--pst-color-primary);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
 .site-hub-link__card {
   display: grid;
   gap: 0.45rem;
@@ -245,11 +236,6 @@ pre {
   background:
     radial-gradient(circle at top right, rgba(47, 91, 82, 0.08), transparent 12rem),
     linear-gradient(180deg, rgba(251, 250, 245, 0.98), rgba(243, 239, 231, 0.94));
-}
-
-.site-hub-link__card--external {
-  background:
-    linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(244, 239, 230, 0.94));
 }
 
 .site-hub-link__card:hover,
