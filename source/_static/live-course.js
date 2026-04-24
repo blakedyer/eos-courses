@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const legacySiteRoot = "https://eos-courses.readthedocs.io/en/latest/";
-  const githubPagesRoot = "https://blakedyer.github.io/eos-courses/";
-
   const courseSidebarToggle =
     document.getElementById("pst-primary-sidebar-checkbox") ||
     document.getElementById("__primary");
@@ -41,10 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileSidebarMedia.addEventListener("change", syncSidebarMode);
     syncSidebarMode();
   }
-
-  document.querySelectorAll(`a[href^="${legacySiteRoot}"]`).forEach((link) => {
-    link.href = githubPagesRoot + link.href.slice(legacySiteRoot.length);
-  });
 
   const lastModified = document.getElementById("lastModified");
   if (!lastModified) {

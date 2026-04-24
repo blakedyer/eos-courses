@@ -28,27 +28,25 @@
 
 <!-- Make body have full width in home page -->
 {% block docs_main %}
-<div class="ecosystem-strip" role="navigation" aria-label="SEOS web ecosystem">
-  <div class="ecosystem-shell">
-    <p class="ecosystem-strip__eyebrow">SEOS Web Ecosystem</p>
-    <a class="ecosystem-link" href="https://www.blakedyer.com/">
-      <span class="ecosystem-link__label">Research</span>
-      <span class="ecosystem-link__summary">Group publications, field albums, and people.</span>
-    </a>
-    <a class="ecosystem-link is-active" href="{{ pathto(root_doc) }}">
-      <span class="ecosystem-link__label">Teaching</span>
-      <span class="ecosystem-link__summary">Course pages, lecture materials, and assignments.</span>
-    </a>
-    <a class="ecosystem-link" href="https://blakedyer.github.io/curriculum_atlas/">
-      <span class="ecosystem-link__label">Curriculum Atlas</span>
-      <span class="ecosystem-link__summary">Approved program and prerequisite structure.</span>
-    </a>
-    <a class="ecosystem-link" href="https://blakedyer.github.io/seos_curriculum/">
-      <span class="ecosystem-link__label">Curriculum Work</span>
-      <span class="ecosystem-link__summary">Draft proposals, status tracking, and handoff notes.</span>
-    </a>
+<header class="teaching-site-header">
+  <div class="teaching-nav-shell">
+    <a class="teaching-site-mark" href="{{ pathto(root_doc) }}">Earth History Teaching</a>
+    <button class="teaching-mobile-nav-toggle" type="button" aria-controls="pst-primary-sidebar-checkbox" aria-expanded="false" aria-label="Open course navigation">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      <span>Course menu</span>
+    </button>
+    <nav class="teaching-site-nav" aria-label="Teaching and SEOS sites">
+      <a href="{{ pathto(root_doc) }}"{% if pagename == root_doc %} aria-current="page"{% endif %}>Teaching</a>
+      <a href="{{ pathto('eos240-public/overview') }}"{% if pagename.startswith('eos240-public/') %} aria-current="page"{% endif %}>EOS 240</a>
+      <a href="{{ pathto('eos408-public/overview') }}"{% if pagename.startswith('eos408-public/') %} aria-current="page"{% endif %}>EOS 408</a>
+      <a href="{{ pathto('eos423-public/overview') }}"{% if pagename.startswith('eos423-public/') %} aria-current="page"{% endif %}>EOS 423</a>
+      <span class="nav-divider" aria-hidden="true">|</span>
+      <a href="https://www.blakedyer.com/">Research</a>
+      <a href="https://blakedyer.github.io/curriculum_atlas/">Curriculum Atlas</a>
+      <a href="https://blakedyer.github.io/seos_curriculum/">Curriculum Work</a>
+    </nav>
   </div>
-</div>
+</header>
 {% if pagename == 'index' %}
 <main class="col-12 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
   {% block body %} {% endblock %}

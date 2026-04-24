@@ -49,7 +49,7 @@ html_theme_options = {
     # "github_url": "https://github.com/blakedyer/eos-courses",
     "show_prev_next": False,
     "search_bar_text": "Search",
-    "navbar_start": ["mobile-sidebar-toggle.html"],
+    "navbar_start": [],
     "navbar_persistent": [],
     "article_header_start": [],
     "article_header_end": [],
@@ -69,4 +69,4 @@ html_static_path = ['_static','eos240-public/Lectures','eos408-public/Lectures',
 html_css_files = ['custom.css']
 html_js_files = ['live-course.js']
 html_title = "Earth History @ UVIC"
-html_baseurl = "https://blakedyer.github.io/eos-courses/"
+html_baseurl = "https://eos-courses.readthedocs.io/en/latest/"
