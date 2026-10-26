@@ -89,7 +89,7 @@ pre {
   justify-content: space-between;
   gap: 1.25rem;
   min-width: 0;
-  width: min(1240px, calc(100vw - 3rem));
+  width: min(1240px, calc(100% - 3rem));
   margin: 0 auto;
 }
 
@@ -127,12 +127,6 @@ pre {
   min-width: 0;
 }
 
-.teaching-site-nav__group + .teaching-site-nav__group::before {
-  content: "";
-  width: 1px;
-  height: 1.15rem;
-  background: rgba(27, 39, 48, 0.2);
-}
 
 .teaching-site-nav a {
   color: var(--pst-color-text-muted);
@@ -1403,12 +1397,14 @@ table.docutils {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 0.75rem;
-    width: min(calc(100vw - 1.6rem), 100%);
+    width: calc(100% - 1.6rem);
   }
 
   .teaching-site-mark {
+    flex: 1 1 8rem;
     min-width: 0;
-    max-width: calc(100% - 10rem);
+    max-width: none;
+    font-size: 0.88rem;
     overflow-wrap: anywhere;
   }
 
@@ -1423,9 +1419,6 @@ table.docutils {
     gap: 0.45rem 0.8rem;
   }
 
-  .teaching-site-nav__group--external {
-    display: none;
-  }
 
   .site-nav__label {
     display: none;
@@ -1638,5 +1631,59 @@ table.docutils {
   #download-pdf p > a.reference.download::after,
   #link-for-full-screen-web-viewing p > a.reference.external[href$=".slides.html"]::after {
     margin-left: 0;
+  }
+}
+
+/* Keep the course navigation local; related sites are available on every page. */
+.teaching-site-footer {
+  border-top: 1px solid rgba(29, 37, 33, 0.12);
+  padding: 2rem 0 2.5rem;
+}
+
+.teaching-footer-shell {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem 3rem;
+  width: min(1240px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.teaching-footer-brand {
+  margin: 0;
+  color: var(--pst-color-heading-color);
+  font-family: var(--pst-font-family-heading);
+  font-weight: 700;
+}
+
+.teaching-footer-label {
+  margin: 0 0 0.55rem;
+  color: var(--pst-color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.teaching-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+}
+
+.teaching-footer-links a {
+  color: var(--pst-color-text-muted);
+  text-underline-offset: 0.2em;
+}
+
+.teaching-footer-links a:hover,
+.teaching-footer-links a:focus-visible {
+  color: var(--pst-color-primary-highlight);
+}
+
+@media (max-width: 959.98px) {
+  .teaching-footer-shell {
+    flex-direction: column;
+    width: calc(100% - 1.6rem);
   }
 }
